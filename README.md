@@ -1,6 +1,6 @@
 # Mobile-Flashcards
 
-### This a mobile flashcards application built using React Native. It was the third and final project of the Udacity React Nanodegree Program. The app has been tested on Expo.
+### This a mobile flashcards application built using React Native. It was the third and final project of the Udacity React Nanodegree Program. The app has been tested on Expo(iOS).
 
 ## Installation
 
