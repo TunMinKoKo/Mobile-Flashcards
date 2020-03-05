@@ -4,8 +4,14 @@
 
 ## Installation
 
+In the project directory, you can run:
+
 ### `npm install`
+
+Runs this to install all the project dependencies
+
 ### `npm start or expo start`
+Type this and run the app
 
 You can download and view the app on your phone by using the Expo app:
 iOS
