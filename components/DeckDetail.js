@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Text, TouchableOpacity } from 'react-native'
 import { connect } from 'react-redux'
-import Deck from './Deck'
 import { removeDeck } from '../actions'
 import { deleteDeck } from '../utils/api'
 import styled from 'styled-components/native'
@@ -10,7 +9,7 @@ const ContainerView = styled.View`
   flex: 1;
   justify-content: flex-start;
   align-items: center;
-  background-color: #DFDBE5;
+  background-color: #F2DFD7;
 `
 
 const TitleView = styled.View`

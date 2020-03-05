@@ -4,12 +4,7 @@ import Deck from './Deck'
 import { getDecks } from '../utils/api'
 import { addDecks } from '../actions'
 import { AppLoading } from 'expo'
-import styled from 'styled-components/native'
-
-const ContainerView = styled.View`
-  flex: 1;
-  background-color: #34435E;
-`
+import { ScrollView } from 'react-native';
 
 class DeckList extends Component {
     state = {
@@ -38,19 +33,14 @@ class DeckList extends Component {
         }
 
         return (
-            <ContainerView>
-                <FlatList
-                    data={DATA}
-                    renderItem={}
-                    keyExtractor={item => item.id}
-                />
-                {Object.keys(decks).map((deck) => (
-                    <Deck
-                        key={deck}
-                        title={deck}
-                    />
-                ))}
-            </ContainerView>
+                <ScrollView style={{backgroundColor:'#34435E'}}>
+                    {Object.keys(decks).map((deck) => (
+                        <Deck
+                            key={deck}
+                            title={deck}
+                        />
+                    ))}
+                </ScrollView>
         )
     }
 }

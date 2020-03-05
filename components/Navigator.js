@@ -1,9 +1,9 @@
 import React from 'react'
-import { Platform, StyleSheet, Text, View } from 'react-native'
+import { Platform} from 'react-native'
 import DeckList from './DeckList'
-//import AddCard from './AddCard'
+import AddCard from './AddCard'
 import AddDeck from './AddDeck'
-//import Quiz from './Quiz'
+import Quiz from './Quiz'
 import DeckDetail from './DeckDetail'
 import {
     createBottomTabNavigator, createMaterialTopTabNavigator, createAppContainer,
@@ -72,25 +72,25 @@ const MainNavigator = createStackNavigator({
             }
         }
     },
-    // AddCard: {
-    //     screen: AddCard,
-    //     navigationOptions: {
-    //         title: 'Add Card',
-    //         headerTintColor: '#fff',
-    //         headerStyle: {
-    //             backgroundColor: '#261E5F',
-    //         }
-    //     }
-    // },
-    // Quiz: {
-    //     screen: Quiz,
-    //     navigationOptions: {
-    //         headerTintColor: '#fff',
-    //         headerStyle: {
-    //             backgroundColor: '#261E5F',
-    //         }
-    //     }
-    // }
+     AddCard: {
+         screen: AddCard,
+         navigationOptions: {
+             title: 'Add Card',
+            headerTintColor: '#fff',
+             headerStyle: {
+                 backgroundColor: '#34435E',
+             }
+         }
+     },
+     Quiz: {
+         screen: Quiz,
+         navigationOptions: {
+             headerTintColor: '#fff',
+             headerStyle: {
+                 backgroundColor: '#34435E',
+             }
+         }
+    }
 })
 
 const Navigator = createAppContainer(MainNavigator)

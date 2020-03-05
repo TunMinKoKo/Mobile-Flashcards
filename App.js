@@ -4,7 +4,7 @@ import { Provider } from 'react-redux'
 import reducer from './reducers'
 import StatusBar from './components/StatusBar'
 import Navigator from './components/Navigator'
-//import { setLocalNotification } from './utils/helpers'
+import { setLocalNotification } from './utils/helpers'
 import styled from 'styled-components/native'
 
 const ContainerView = styled.View`
@@ -13,7 +13,7 @@ const ContainerView = styled.View`
 
 class App extends React.Component {
   componentDidMount() {
-    //setLocalNotification()
+    setLocalNotification()
   }
 
   render() {

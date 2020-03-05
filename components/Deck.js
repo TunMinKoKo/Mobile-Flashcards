@@ -13,6 +13,7 @@ const DeckBtn = styled.TouchableOpacity`
   background-color:#F2DFD7;
   border-radius:10px;
   box-shadow: 10px 5px 5px black;
+  margin:50px;
 `
 
 const TitleText = styled.Text`
@@ -73,7 +74,6 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-
     }
 })
 
